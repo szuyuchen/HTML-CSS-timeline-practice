@@ -1,0 +1,39 @@
+.timeline {
+  list-style: none;
+}
+
+.timeline > li {
+  margin-bottom: 30px;
+}
+
+@media (min-width : 640px) {
+  .timeline > li {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .date {
+    margin-top: 20px;
+    width: 110px;
+    float: left;
+  }
+
+  .content {
+    width: 80%;
+    border-left: 2px #1b1b1b solid;
+    padding-left: 30px;
+    float: left;
+  }
+
+  .content:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #1b1b1b;
+    position: absolute;
+    top: 30px;
+    left: 106px;
+    border-radius: 100%;
+  }
+}
